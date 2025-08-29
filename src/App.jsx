@@ -3,7 +3,7 @@ import { AuthProvider } from './contexts/AuthContext.jsx';
 import { QuizProvider } from './contexts/QuizContext.jsx';
 import { CustomThemeProvider } from './contexts/ThemeContext.jsx';
 import Layout from './components/common/Layout.jsx';
-import Home from './pages/home.jsx';
+import Home from './pages/Home.jsx';
 import Login from './components/auth/Login.jsx';
 import Register from './components/auth/Register.jsx';
 import AdminDashboard from './components/admin/AdminDashboard.jsx';
