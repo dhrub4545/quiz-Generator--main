@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CreateQuiz from './CreateQuiz.jsx'; // Your existing CreateQuiz component
-import ViewQuizzes from './ViewQuizzes.jsx'; // Your existing ViewQuizzes component
+import ViewQuizzes from './viewQuizzes.jsx'; // Your existing ViewQuizzes component
 import { Box, Typography, Tabs, Tab } from '@mui/material';
 
 const AdminDashboard = () => {
