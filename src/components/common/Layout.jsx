@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import {
   Box,
   Drawer,
@@ -20,9 +20,9 @@ import {
   AccountCircle 
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
-import { useThemeMode } from '../../contexts/ThemeContext';
-import Navbar from './Navbar'; // Import your Navbar component
+import { useAuth } from '../../contexts/AuthContext.jsx';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
+import Navbar from './Navbar.jsx'; // Import your Navbar component
 
 const drawerWidth = 240;
 
@@ -141,7 +141,7 @@ const Layout = ({ children }) => {
             '&:hover': { textDecoration: 'underline' }
           }}
         >
-          🚪 Log out
+          ðŸšª Log out
         </Typography>
       </Box>
     </Box>
@@ -172,7 +172,7 @@ const Layout = ({ children }) => {
                 sx={{ borderRadius: 1 }}
               >
                 <ListItemText 
-                  primary={`• ${quiz.name || quiz.topic}`}
+                  primary={`â€¢ ${quiz.name || quiz.topic}`}
                   primaryTypographyProps={{ fontSize: '0.9rem', color: 'text.secondary' }}
                 />
               </ListItemButton>
@@ -217,7 +217,7 @@ const Layout = ({ children }) => {
             '&:hover': { textDecoration: 'underline' }
           }}
         >
-          🚪 Log out
+          ðŸšª Log out
         </Typography>
       </Box>
     </Box>
@@ -325,3 +325,4 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+

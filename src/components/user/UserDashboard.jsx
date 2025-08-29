@@ -1,6 +1,6 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useQuiz } from '../../contexts/QuizContext';
+import { useQuiz } from '../../contexts/QuizContext.jsx';
 import { 
   Box, 
   Typography, 
@@ -119,3 +119,4 @@ const UserDashboard = () => {
 };
 
 export default UserDashboard;
+

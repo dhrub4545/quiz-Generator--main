@@ -1,25 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
-import { QuizProvider } from './contexts/QuizContext';
-import { CustomThemeProvider } from './contexts/ThemeContext';
-import Layout from './components/common/Layout';
-import Home from './pages/home';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
-import AdminDashboard from './components/admin/AdminDashboard';
-import UserDashboard from './components/user/UserDashboard';
-import Quiz from './components/user/Quiz';
-import Results from './components/user/Results';
-import TestHistory from './components/user/TestHistory';
-import EditQuiz from './components/admin/EditQuiz';
-import NotFound from './pages/NotFound';
-import ProtectedRoute from './components/common/ProtectedRoute';
-import PublicRoute from './components/common/PublicRoute';
-import MockQuiz from './components/user/MockQuiz';
-import TakeQuiz from './components/user/TakeQuiz';
-import ViewResult from './components/user/ViewResult';
-import Unauthorized from './pages/Unauthorized';
-import Profile from './components/common/Profile';
+﻿import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import { QuizProvider } from './contexts/QuizContext.jsx';
+import { CustomThemeProvider } from './contexts/ThemeContext.jsx';
+import Layout from './components/common/Layout.jsx';
+import Home from './pages/home.jsx';
+import Login from './components/auth/Login.jsx';
+import Register from './components/auth/Register.jsx';
+import AdminDashboard from './components/admin/AdminDashboard.jsx';
+import UserDashboard from './components/user/UserDashboard.jsx';
+import Quiz from './components/user/Quiz.jsx';
+import Results from './components/user/Results.jsx';
+import TestHistory from './components/user/TestHistory.jsx';
+import EditQuiz from './components/admin/EditQuiz.jsx';
+import NotFound from './pages/NotFound.jsx';
+import ProtectedRoute from './components/common/ProtectedRoute.jsx';
+import PublicRoute from './components/common/PublicRoute.jsx';
+import MockQuiz from './components/user/MockQuiz.jsx';
+import TakeQuiz from './components/user/TakeQuiz.jsx';
+import ViewResult from './components/user/ViewResult.jsx';
+import Unauthorized from './pages/Unauthorized.jsx';
+import Profile from './components/common/Profile.jsx';
 import './App.css';
 
 function App() {
@@ -116,3 +116,4 @@ function App() {
 }
 
 export default App;
+

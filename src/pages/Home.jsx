@@ -1,4 +1,4 @@
-import { useAuth } from '../contexts/AuthContext';
+﻿import { useAuth } from '../contexts/AuthContext.jsx';
 import { Button, Typography, Box, Container } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -157,3 +157,4 @@ const Home = () => {
 };
 
 export default Home;
+

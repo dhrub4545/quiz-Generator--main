@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useQuiz } from '../../contexts/QuizContext';
+import { useQuiz } from '../../contexts/QuizContext.jsx';
 import {
   Box,
   Typography,
@@ -285,3 +285,4 @@ const TakeQuiz = () => {
 };
 
 export default TakeQuiz;
+

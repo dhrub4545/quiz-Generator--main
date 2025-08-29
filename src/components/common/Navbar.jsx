@@ -1,6 +1,6 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
-import { useThemeMode } from '../../contexts/ThemeContext';
+﻿import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext.jsx';
+import { useThemeMode } from '../../contexts/ThemeContext.jsx';
 import { 
   AppBar, 
   Toolbar, 
@@ -178,3 +178,4 @@ const Navbar = ({ onMenuClick }) => {
 };
 
 export default Navbar;
+

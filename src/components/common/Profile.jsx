@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import {
   Box,
   Card,
@@ -27,7 +27,7 @@ import {
   Save as SaveIcon,
   Cancel as CancelIcon
 } from '@mui/icons-material';
-import { useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext.jsx';
 
 const Profile = ({ onClose }) => {
   const { user } = useAuth();
@@ -435,3 +435,4 @@ const Profile = ({ onClose }) => {
 };
 
 export default Profile;
+
