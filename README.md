@@ -19,6 +19,14 @@
 
 ---
 
+## ?? Application Screenshot & Interface Preview
+
+<div align="center">
+  <img src="./assets/screenshot.png" alt="Application Interface Preview" width="850" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
+</div>
+
+---
+
 ## 🌐 Suite 5 Ecosystem & Cross-Repository Links
 
 **quiz-Generator--main** serves as the central full-stack production release within the **Suite 5 (Medical & AI Quiz Ecosystem)**. Explore the related repositories:
