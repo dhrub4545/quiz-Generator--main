@@ -12,7 +12,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-v20+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/Express-5.1.0-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose_8.18-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
-[![Google Gemini](https://img.shields.io/badge/Google_Gemini-2.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-3.8_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 </div>
@@ -33,7 +33,7 @@
 
 | Repository | Role | Core Technology | Link |
 | :--- | :--- | :--- | :--- |
-| **quiz-Generator--main** (This Repo) | Enterprise AI MCQ Backend & Full-Stack Platform | React 19 / Express 5 / MongoDB / Gemini 2.5 Flash | [quiz-Generator--main](file:///c:/Users/pandi/OneDrive/Desktop/github/quiz-Generator--main) |
+| **quiz-Generator--main** (This Repo) | Enterprise AI MCQ Backend & Full-Stack Platform | React 19 / Express 5 / MongoDB / Gemini 3.8 Flash | [quiz-Generator--main](file:///c:/Users/pandi/OneDrive/Desktop/github/quiz-Generator--main) |
 | **mcq-main-frontend** | Production Web Exam Center & Analytics Portal | React 19 / Vite / Recharts / Vercel Host | [mcq-main-frontend](file:///c:/Users/pandi/OneDrive/Desktop/github/mcq-main-frontend) |
 | **quiz-Generator-** | Foundational AI MCQ Algorithmic Core Prototype | Express / Google Generative AI / Vite Prototype | [quiz-Generator-](file:///c:/Users/pandi/OneDrive/Desktop/github/quiz-Generator-) |
 | **DCP-QUIZZY** | Medical Mobile App Client & Licensing Engine | React Native / Expo 57 / Express / MongoDB | [DCP-QUIZZY](file:///c:/Users/pandi/OneDrive/Desktop/github/DCP-QUIZZY) |
@@ -45,7 +45,7 @@
 Traditional exam authoring is time-consuming, prone to human bias, and lacks immediate scalability across evolving academic curricula. Educative organizations, medical faculties, and certification boards require automated tools capable of translating syllabus topics and textbook excerpts into rigorous, psychometrically balanced multiple-choice questions.
 
 **Quiz-Generator-Main** delivers an end-to-end examination platform combining:
-1. **Intelligent Generative Authoring**: Leveraging **Google Gemini 2.5 Flash** to synthesize psychometrically structured question sets with four plausible distractors, verifiable correct answers, and clean JSON formatting.
+1. **Intelligent Generative Authoring**: Leveraging **Google Gemini 3.8 Flash** to synthesize psychometrically structured question sets with four plausible distractors, verifiable correct answers, and clean JSON formatting.
 2. **Quality Assurance Review Lifecycle**: An administrative gating system where generated questions enter a `pending` state, allowing subject matter experts (SMEs) to inspect, edit, accept, or reject questions before they enter public test banks.
 3. **Role-Based Examination Portals**: Segregated user experiences for Students (taking timed quizzes, analyzing historical progress with Recharts charts, reviewing mistakes) and Educators/Admins (managing test banks, curating question pools).
 4. **Resilient Data Architecture**: Built on Express 5, Mongoose 8, JWT-authenticated sessions, and local client state caching to guarantee high availability during peak examination sittings.
@@ -98,7 +98,7 @@ flowchart TD
 
     subgraph DataAndAI["Databases & Cloud AI Services"]
         MongoDB[("MongoDB Atlas Database\n(Users, Quizzes, TestHistory)")]
-        GeminiAPI["Google Gemini 2.5 Flash\n(Structured JSON Prompting)"]
+        GeminiAPI["Google Gemini 3.8 Flash\n(Structured JSON Prompting)"]
     end
 
     UI --> Router
@@ -136,7 +136,7 @@ sequenceDiagram
     actor Student as Student / Test-Taker
     participant Web as React 19 Frontend
     participant Server as Express.js 5.1 Backend
-    participant Gemini as Google Gemini 2.5 Flash
+    participant Gemini as Google Gemini 3.8 Flash
     participant DB as MongoDB Atlas
 
     Admin->>Web: Submits Prompt ("Cardiology Arrhythmias", Count: 10)
@@ -183,7 +183,7 @@ sequenceDiagram
 | **Client Storage** | LocalForage | `^1.10.0` | Asynchronous browser IndexedDB/LocalStorage abstraction |
 | **Backend Framework** | Express.js | `^5.1.0` | Next-generation Node.js server framework with modernized async routing |
 | **Database & ODM** | MongoDB / Mongoose | `^8.18.0` | Strict schema validation, compound indexes, and relational refs |
-| **AI Generation** | `@google/generative-ai` | `^0.24.1` | Google Gemini 2.5 Flash SDK for high-speed prompt execution |
+| **AI Generation** | `@google/generative-ai` | `^0.24.1` | Google Gemini 3.8 Flash SDK for high-speed prompt execution |
 | **Authentication** | JSON Web Tokens (JWT) | `^9.0.2` | Stateless signed tokens for role verification (user vs admin) |
 | **Password Security** | bcryptjs | `^3.0.2` | Adaptive salt rounds for secure password hashing |
 
