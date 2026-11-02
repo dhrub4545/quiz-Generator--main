@@ -120,7 +120,7 @@ flowchart TD
     HistRoutes --> MongoDB
     ProfRoutes --> MongoDB
     MCQGen -->|"Enhanced Prompt + Schema"| GeminiAPI
-    GeminiAPI -->>|"JSON Array [Q, [Options], AnsIdx]"| MCQGen
+    GeminiAPI -->|"JSON Array [Q, [Options], AnsIdx]"| MCQGen
 ```
 
 ---
