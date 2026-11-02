@@ -680,7 +680,7 @@ app.post('/api/generate-mcqs', async (req, res) => {
       return res.status(400).json({ error: 'Count must be between 1 and 50' });
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const enhancedPrompt = `Generate exactly ${count} multiple-choice questions based on:\n${prompt}\n\nFormat each as: ["question", ["option1", "option2", "option3", "option4"], correctIndex]\nOnly return a valid JSON array, no other text or markdown.`;
 
